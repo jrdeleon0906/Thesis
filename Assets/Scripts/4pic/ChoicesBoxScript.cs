@@ -6,18 +6,22 @@ public class ChoicesBoxScript : MonoBehaviour, IPointerDownHandler
 {
     public void OnPointerDown(PointerEventData eventData)
     {
-        string letterClicked = this.gameObject.GetComponentInChildren<Text>().text;
-
-        GameObject[] answer = GameObject.FindGameObjectsWithTag(ConstStrings.PicsAnsBox);
-
-        foreach (var item in answer)
+        if (Time.timeScale == 1)
         {
-            string ansBox = item.GetComponentInChildren<Text>().text;
+            string letterClicked = this.gameObject.GetComponentInChildren<Text>().text;
 
-            if (letterClicked.Contains(ansBox))
+            GameObject[] answer = GameObject.FindGameObjectsWithTag(ConstStrings.PicsAnsBox);
+
+            foreach (var item in answer)
             {
-                item.GetComponentInChildren<Text>().enabled = true;
+                string ansBox = item.GetComponentInChildren<Text>().text;
+
+                if (letterClicked.Contains(ansBox))
+                {
+                    item.GetComponentInChildren<Text>().enabled = true;
+                }
             }
         }
+        
     }
 }

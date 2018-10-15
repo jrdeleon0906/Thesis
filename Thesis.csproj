@@ -292,6 +292,7 @@
     <Compile Include="Assets\Scripts\4pic\HintScript.cs" />
     <Compile Include="Assets\Scripts\4pic\Models\AnswerAndIndex.cs" />
     <Compile Include="Assets\Scripts\4pic\Models\QuestionAndAnswersModel.cs" />
+    <Compile Include="Assets\Scripts\4pic\PicWordButtonScript.cs" />
     <Compile Include="Assets\Scripts\Common\ConstStrings.cs" />
     <Compile Include="Assets\Scripts\Common\StringExtension.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MainMenuScript.cs" />

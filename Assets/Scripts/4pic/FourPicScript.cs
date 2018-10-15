@@ -86,7 +86,6 @@ public class FourPicScript : FourPicLogicScript
                 if (QandA.Length == previousQuestion.Count)
                 {
 
-                    //DontDestroyOnLoad(GameObject.Find("ScriptHolder"));
                     SceneManager.LoadScene(ConstStrings.MainMenuScene, LoadSceneMode.Single);
                 }
                 else
