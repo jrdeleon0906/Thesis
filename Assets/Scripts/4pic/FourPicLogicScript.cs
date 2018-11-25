@@ -8,72 +8,6 @@ public class FourPicLogicScript : MonoBehaviour {
 
     private int numOfChoicesBox = 18;
 
-    public void InstantiateRandomizePic(QuestionAndAnswers qAndA, GameObject pic)
-    {
-        GameObject image1 = Instantiate(pic, new Vector3(1, 1)
-                                        , Quaternion.identity) as GameObject;
-        image1.transform.SetParent(gameObject.transform, false);
-        image1.GetComponent<Image>().rectTransform.sizeDelta = new Vector2(100, 100);
-        image1.GetComponent<RectTransform>().position = new Vector3(Screen.width * .25f, Screen.height * .8f);
-
-        GameObject image2 = Instantiate(pic, new Vector3(1, 1)
-                                , Quaternion.identity) as GameObject;
-        image2.transform.SetParent(gameObject.transform, false);
-        image2.GetComponent<Image>().rectTransform.sizeDelta = new Vector2(100, 100);
-        image2.GetComponent<RectTransform>().position = new Vector3(Screen.width * .75f, Screen.height * .8f);
-
-        GameObject image3 = Instantiate(pic, new Vector3(1, 1)
-                                , Quaternion.identity) as GameObject;
-        image3.transform.SetParent(gameObject.transform, false);
-        image3.GetComponent<Image>().rectTransform.sizeDelta = new Vector2(100, 100);
-        image3.GetComponent<RectTransform>().position = new Vector3(Screen.width * .25f, Screen.height * .5f);
-
-        GameObject image4 = Instantiate(pic, new Vector3(1, 1)
-                                , Quaternion.identity) as GameObject;
-        image4.transform.SetParent(gameObject.transform, false);
-        image4.GetComponent<Image>().rectTransform.sizeDelta = new Vector2(100, 100);
-        image4.GetComponent<RectTransform>().position = new Vector3(Screen.width * .75f, Screen.height * .5f);
-
-        GameObject[] pics = GameObject.FindGameObjectsWithTag(ConstStrings.PicTags);
-
-        int index = 0;
-        foreach (GameObject item in pics)
-        {
-            item.GetComponent<Image>().sprite = qAndA.Images[index];
-            index++;
-        }
-    }
-
-    public void InstantiateAnswer(string answers, GameObject answerBox)
-    {
-        float additional = 0f;
-        GameObject parent = GameObject.Find("/Canvas/AnsPlaceHolder");
-        bool first = false;
-
-        foreach (char item in answers)
-        {
-            if ((item >= '0' && item <= '9') || (item >= 'A' && item <= 'Z') || (item >= 'a' && item <= 'z') || item == ' ')
-            {
-                GameObject answerBoxObj = Instantiate(answerBox, new Vector3(1, 1)
-                            , Quaternion.identity) as GameObject;
-
-                answerBoxObj.transform.SetParent(parent.transform, false);
-                answerBoxObj.GetComponent<Image>().rectTransform.sizeDelta = new Vector2(30,30);
-                if (!first)
-                {
-                    additional += Screen.width * .1f / 2;
-                    first = true;
-                }
-                answerBoxObj.GetComponent<RectTransform>().position = new Vector3(additional, Screen.height * .35f);
-                answerBoxObj.GetComponentInChildren<Text>().text = "" + item.ToStringToUpper();
-                answerBoxObj.GetComponentInChildren<Text>().enabled = false;
-                additional += Screen.width * .1f;
-
-            }
-
-        }
-    }
-
     public void StartInstantiateOfChoicesBox(QuestionAndAnswers QandA, GameObject choicesBox)
     {
         List<AnswerAndIndex> letterPos = RandomizePositionOfAnswers(QandA);
@@ -84,6 +18,15 @@ public class FourPicLogicScript : MonoBehaviour {
     {
         GameObject hintText = GameObject.Find(ConstStrings.HintTxt);
         hintText.GetComponent<Text>().text = hint;
+    }
+
+    public void ShowQuestionsAndAnswer(QuestionAndAnswers question)
+    {
+        GameObject toShow = GameObject.Find(question.Answer);
+        GameObject ansPlaceHolder = toShow.transform.Find(ConstStrings.AnsPlaceHolder).gameObject;
+        GameObject picHolder = toShow.transform.Find(ConstStrings.PicHolder).gameObject;
+        ansPlaceHolder.SetActive(true);
+        picHolder.SetActive(true);
     }
 
     private void InstantiateChoicesBox(GameObject choicesBox, List<AnswerAndIndex> letterPos)
@@ -105,7 +48,7 @@ public class FourPicLogicScript : MonoBehaviour {
 
             choicesBoxObj.transform.SetParent(gameObject.transform, false);
             choicesBoxObj.GetComponent<Image>().rectTransform.sizeDelta = new Vector2(30,30);
-            choicesBoxObj.GetComponent<RectTransform>().position = new Vector3(Screen.width * .1f + additionalWidth, Screen.height * .25f + additionalHeight);
+            choicesBoxObj.GetComponent<RectTransform>().position = new Vector3(Screen.width * .1f + additionalWidth, Screen.height * .2f + additionalHeight);
             choicesBoxObj.GetComponentInChildren<Text>().text = "" + SetLetter(i, letterPos, noRepeatedLetter);
             additionalWidth += Screen.width * .1f;
         }

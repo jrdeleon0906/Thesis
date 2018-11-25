@@ -35,11 +35,9 @@ public class FourPicScript : FourPicLogicScript
 
         int indexOfQuestion = tempIndex[Random.Range(0, tempIndex.Count)];
         previousQuestion.Add(indexOfQuestion);
-
-
         question = QandA[indexOfQuestion];
-        InstantiateRandomizePic(question, Pic);
-        InstantiateAnswer(question.Answer, AnswerBox);
+
+        ShowQuestionsAndAnswer(question);
         StartInstantiateOfChoicesBox(question, ChoicesBox);
         SetHintText(question.Hint);
     }

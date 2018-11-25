@@ -7,6 +7,8 @@ public static class ConstStrings
     public const string PicsAnsBox = "4PicsAnsBox";
     public const string PicsChoices = "4PicsChoices";
     public const string HintTxt = "4PicHintTxt";
+    public const string AnsPlaceHolder = "AnsPlaceHolder";
+    public const string PicHolder = "PicHolder";
     #endregion
 
     #region MainMenuButtons
