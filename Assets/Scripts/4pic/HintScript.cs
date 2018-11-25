@@ -11,17 +11,5 @@ namespace Assets.Scripts._4pic
             GameObject hintText = GameObject.Find(ConstStrings.HintTxt);
             hintText.GetComponent<Text>().enabled = !hintText.GetComponent<Text>().enabled;
         }
-
-        //public void OnPointerEnter(PointerEventData eventData)
-        //{
-        //    GameObject hintText = GameObject.Find(ConstStrings.HintTxt);
-        //    hintText.GetComponent<Text>().enabled = true;
-        //}
-
-        //public void OnPointerExit(PointerEventData eventData)
-        //{
-        //    GameObject hintText = GameObject.Find(ConstStrings.HintTxt);
-        //    hintText.GetComponent<Text>().enabled = false;
-        //}
     }
 }

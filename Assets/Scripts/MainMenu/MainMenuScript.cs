@@ -35,7 +35,6 @@ public class MainMenuScript : MonoBehaviour, IPointerDownHandler
                     break;
                 case ConstStrings.QuitBtn:
                         Application.Quit();
-                        //System.Diagnostics.Process.GetCurrentProcess().Kill();
                     break;
                 case ConstStrings.PicWordBtn:
                         SceneManager.LoadScene(ConstStrings.PicWordsScene);
