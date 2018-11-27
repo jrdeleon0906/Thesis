@@ -18,10 +18,12 @@ public class FourPicScript : FourPicLogicScript
     public Texture NextStage;
     public Texture BackToMainMenu;
 
-    public bool victory = false;
+    public static bool victory = false;
 
     private QuestionAndAnswers question;
     private List<int> previousQuestion = new List<int>();
+
+    public static string questionAnswer;
 
     public void Start()
     {
@@ -35,26 +37,17 @@ public class FourPicScript : FourPicLogicScript
 
         int indexOfQuestion = tempIndex[Random.Range(0, tempIndex.Count)];
         previousQuestion.Add(indexOfQuestion);
-        question = QandA[indexOfQuestion];
+        question = QandA[0];
 
         ShowQuestionsAndAnswer(question);
         StartInstantiateOfChoicesBox(question, ChoicesBox);
         SetHintText(question.Hint);
+
+        questionAnswer = question.Answer;
     }
 
     public void Update()
     {
-        if (!victory)
-        { 
-            GameObject[] ansBox = GameObject.FindGameObjectsWithTag(ConstStrings.PicsAnsBox);
-
-            int questionLengthRemovedSpecialCharacters = question.Answer.RemoveSpecialCharacters().Length;
-
-            if (ansBox.Where(x => x.GetComponentInChildren<Text>().enabled).Count() == questionLengthRemovedSpecialCharacters)
-            {
-                victory = true;
-            }
-        }
     }
 
     private void DestroyGameObjects(string objectTag)
@@ -80,6 +73,7 @@ public class FourPicScript : FourPicLogicScript
                 DestroyGameObjects(ConstStrings.PicTags);
                 DestroyGameObjects(ConstStrings.PicsAnsBox);
                 DestroyGameObjects(ConstStrings.PicsChoices);
+                DestroyGameObjects(questionAnswer);
 
                 if (QandA.Length == previousQuestion.Count)
                 {

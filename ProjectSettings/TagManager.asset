@@ -7,6 +7,10 @@ TagManager:
   - 4PicsPic
   - 4PicsAnsBox
   - 4PicsChoices
+  - Aguinaldo
+  - Bonifacio
+  - Jose Rizal
+  - JoseRizalPicBox
   layers:
   - Default
   - TransparentFX

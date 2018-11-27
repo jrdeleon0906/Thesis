@@ -28,7 +28,7 @@ public class PicWordButtonScript : MonoBehaviour, IPointerDownHandler
     {
         GameObject backToMainMenuImg = GameObject.Find(ConstStrings.BackToMainMenuHolder);
         GameObject pauseBtn = GameObject.Find(ConstStrings.PauseBtn);
-        GameObject[] pics = GameObject.FindGameObjectsWithTag(ConstStrings.PicTags);
+        GameObject[] pics = GameObject.FindGameObjectsWithTag(FourPicScript.questionAnswer);
 
         if (Time.timeScale == 0)
         {

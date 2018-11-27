@@ -22,11 +22,12 @@ public class FourPicLogicScript : MonoBehaviour {
 
     public void ShowQuestionsAndAnswer(QuestionAndAnswers question)
     {
-        GameObject toShow = GameObject.Find(question.Answer);
-        GameObject ansPlaceHolder = toShow.transform.Find(ConstStrings.AnsPlaceHolder).gameObject;
-        GameObject picHolder = toShow.transform.Find(ConstStrings.PicHolder).gameObject;
-        ansPlaceHolder.SetActive(true);
-        picHolder.SetActive(true);
+        GameObject[] toShow = GameObject.FindGameObjectsWithTag(question.Answer);
+
+        foreach (GameObject item in toShow)
+        {
+            item.GetComponent<Image>().enabled = true;
+        }
     }
 
     private void InstantiateChoicesBox(GameObject choicesBox, List<AnswerAndIndex> letterPos)

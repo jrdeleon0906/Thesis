@@ -8,7 +8,8 @@ public class MainMenuScript : MonoBehaviour, IPointerDownHandler
 
     public void Start()
     {
-        DisableEnableButtons(ConstStrings.AfterPlayHolder,false);
+        DisableEnableButtons(ConstStrings.GameModeHolder,false);
+        DisableEnableButtons(ConstStrings.GameCategoryHolder, false);
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -19,13 +20,14 @@ public class MainMenuScript : MonoBehaviour, IPointerDownHandler
             switch (eventData.selectedObject.name)
             {
                 case ConstStrings.PlayBtn:
-                    GameObject afterPlay = GameObject.Find(ConstStrings.AfterPlayHolder);
-                    if (afterPlay != null)
-                    {
-                        DisableEnableButtons(ConstStrings.AfterPlayHolder, true);
-                    }
+                    GameObject gameMode = GameObject.Find(ConstStrings.GameModeHolder);
                     GameObject initial = GameObject.Find(ConstStrings.InitialHolder);
-                    if (initial != null)
+                    if (gameMode != null)  
+                    {
+                        DisableEnableButtons(ConstStrings.GameCategoryHolder, true);
+                        DisableEnableButtons(ConstStrings.InitialHolder, false);
+                    }
+                    else if (initial != null)
                     {
                         DisableEnableButtons(ConstStrings.InitialHolder, true);
                     }
@@ -42,6 +44,12 @@ public class MainMenuScript : MonoBehaviour, IPointerDownHandler
                 case ConstStrings.BackToMainMenuBtn:
                         SceneManager.LoadScene(ConstStrings.MainMenuScene);
                     break;
+                case ConstStrings.AmericaBtn:
+                case ConstStrings.ChineseBtn:
+                case ConstStrings.SpanishBtn:
+                    DisableEnableButtons(ConstStrings.GameModeHolder, true);
+                    DisableEnableButtons(ConstStrings.GameCategoryHolder, false);
+                    break;
                 default:
                     break;
             }
@@ -50,12 +58,12 @@ public class MainMenuScript : MonoBehaviour, IPointerDownHandler
 
     private static void DisableEnableButtons(string whatToDisable,bool isEnable)
     {
-        GameObject afterPlay = GameObject.Find(whatToDisable);
-        for (int i = 0; i < afterPlay.transform.childCount; i++)
+        GameObject tempGameObject = GameObject.Find(whatToDisable);
+        for (int i = 0; i < tempGameObject.transform.childCount; i++)
         {
-            Transform tempObject = afterPlay.transform.GetChild(i);
-            tempObject.GetComponent<Image>().enabled = isEnable;
-            Text text = tempObject.GetComponentInChildren<Text>();
+            Transform transformObject = tempGameObject.transform.GetChild(i);
+            transformObject.GetComponent<Image>().enabled = isEnable;
+            Text text = transformObject.GetComponentInChildren<Text>();
             if (text != null)
             {
                 text.enabled = isEnable;

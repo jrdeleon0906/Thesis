@@ -3,6 +3,7 @@ public static class ConstStrings
 {
 
     #region 4pic
+    public const string AnsBox = "AnsBox";
     public const string PicTags = "4PicsPic";
     public const string PicsAnsBox = "4PicsAnsBox";
     public const string PicsChoices = "4PicsChoices";
@@ -25,7 +26,12 @@ public static class ConstStrings
     public const string BackToMainMenuHolder = "BackToMainMenuPlaceHolder";
     public const string BackToMainMenuBtn = "BackToMainMenuBtn";
 
-    public const string AfterPlayHolder = "AfterPlay";
+    public const string ChineseBtn = "Chinese";
+    public const string SpanishBtn = "Spanish";
+    public const string AmericaBtn = "American";
+
+    public const string GameCategoryHolder = "GameCategory";
+    public const string GameModeHolder = "GameMode";
     public const string InitialHolder = "Initial"; 
 
     public const string Canvas = "Canvas";
