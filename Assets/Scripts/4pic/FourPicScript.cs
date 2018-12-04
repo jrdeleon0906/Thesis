@@ -1,8 +1,5 @@
-﻿using System.Linq;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-using Assets.Scripts.Common;
 using System.Collections.Generic;
 
 public class FourPicScript : FourPicLogicScript

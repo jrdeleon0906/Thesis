@@ -12,6 +12,12 @@ public static class ConstStrings
     public const string PicHolder = "PicHolder";
     #endregion
 
+    #region Xword
+
+    public const string XWordChoice = "XWordChoice";
+
+    #endregion
+
     #region MainMenuButtons
     public const string PlayBtn = "PlayBtn";
     public const string SettingsBtn = "SettingsBtn";
@@ -38,5 +44,6 @@ public static class ConstStrings
 
     public const string MainMenuScene = "Thesis";
     public const string PicWordsScene = "PicWords";
+    public const string CrossWordScene = "CrossWord";
 
 }

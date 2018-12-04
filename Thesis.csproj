@@ -295,6 +295,8 @@
     <Compile Include="Assets\Scripts\4pic\PicWordButtonScript.cs" />
     <Compile Include="Assets\Scripts\Common\ConstStrings.cs" />
     <Compile Include="Assets\Scripts\Common\StringExtension.cs" />
+    <Compile Include="Assets\Scripts\CrossWord\AnsButtonScript.cs" />
+    <Compile Include="Assets\Scripts\CrossWord\CrossWordScript.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MainMenuScript.cs" />
     <Compile Include="Assets\Scripts\MasterScript.cs" />
   </ItemGroup>

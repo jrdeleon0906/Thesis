@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/4pic/PicWords.unity
     guid: cf12ee11b81a1bf47886b133c8a0246a
+  - enabled: 1
+    path: Assets/Scenes/CrossWord/CrossWord.unity
+    guid: 50bb93070ef756c40b404b3893fa5cc6

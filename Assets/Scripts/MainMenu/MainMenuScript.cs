@@ -41,6 +41,9 @@ public class MainMenuScript : MonoBehaviour, IPointerDownHandler
                 case ConstStrings.PicWordBtn:
                         SceneManager.LoadScene(ConstStrings.PicWordsScene);
                     break;
+                case ConstStrings.CrossWordBtn:
+                    SceneManager.LoadScene(ConstStrings.CrossWordScene);
+                    break;
                 case ConstStrings.BackToMainMenuBtn:
                         SceneManager.LoadScene(ConstStrings.MainMenuScene);
                     break;
