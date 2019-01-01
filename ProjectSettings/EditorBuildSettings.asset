@@ -14,3 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CrossWord/CrossWord.unity
     guid: 50bb93070ef756c40b404b3893fa5cc6
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA.unity
+    guid: d1ff1165c92dbf2429bebb97513cf431

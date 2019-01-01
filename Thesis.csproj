@@ -294,11 +294,14 @@
     <Compile Include="Assets\Scripts\4pic\Models\QuestionAndAnswersModel.cs" />
     <Compile Include="Assets\Scripts\4pic\PicWordButtonScript.cs" />
     <Compile Include="Assets\Scripts\Common\ConstStrings.cs" />
+    <Compile Include="Assets\Scripts\Common\NextStageGUI.cs" />
     <Compile Include="Assets\Scripts\Common\StringExtension.cs" />
     <Compile Include="Assets\Scripts\CrossWord\AnsButtonScript.cs" />
     <Compile Include="Assets\Scripts\CrossWord\CrossWordScript.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MainMenuScript.cs" />
     <Compile Include="Assets\Scripts\MasterScript.cs" />
+    <Compile Include="Assets\Scripts\QandA\QandAButtonScript.cs" />
+    <Compile Include="Assets\Scripts\QandA\QandAScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
