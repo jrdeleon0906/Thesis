@@ -13,12 +13,14 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>2017.3.0f3</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -292,11 +294,13 @@
     <Compile Include="Assets\Scripts\4pic\HintScript.cs" />
     <Compile Include="Assets\Scripts\4pic\Models\AnswerAndIndex.cs" />
     <Compile Include="Assets\Scripts\4pic\Models\QuestionAndAnswersModel.cs" />
-    <Compile Include="Assets\Scripts\4pic\PicWordButtonScript.cs" />
     <Compile Include="Assets\Scripts\Common\ConstStrings.cs" />
     <Compile Include="Assets\Scripts\Common\NextStageGUI.cs" />
+    <Compile Include="Assets\Scripts\Common\PauseButtonScript.cs" />
     <Compile Include="Assets\Scripts\Common\StringExtension.cs" />
     <Compile Include="Assets\Scripts\CrossWord\AnsButtonScript.cs" />
+    <Compile Include="Assets\Scripts\CrossWord\CrossWordAnswers.cs" />
+    <Compile Include="Assets\Scripts\CrossWord\CrossWordButtonScript.cs" />
     <Compile Include="Assets\Scripts\CrossWord\CrossWordScript.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MainMenuScript.cs" />
     <Compile Include="Assets\Scripts\MasterScript.cs" />

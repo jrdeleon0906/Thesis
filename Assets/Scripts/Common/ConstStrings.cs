@@ -8,6 +8,7 @@ public static class ConstStrings
     public const string PicsAnsBox = "4PicsAnsBox";
     public const string PicsChoices = "4PicsChoices";
     public const string HintTxt = "4PicHintTxt";
+    public const string Hint = "Hint";
     public const string AnsPlaceHolder = "AnsPlaceHolder";
     public const string PicHolder = "PicHolder";
     #endregion
@@ -20,6 +21,8 @@ public static class ConstStrings
 
     #region QAndA
     public const string QandAAns = "QAndAAns";
+    public const string QAndAQuestion = "QAndAQuestion";
+    public const string QAndAOtherChoice = "QAndAOtherChoice";
     #endregion
 
     #region MainMenuButtons

@@ -6,9 +6,6 @@ public class CrossWordScript : MonoBehaviour {
 
     public static string selectedCharacters;
 
-    public static string[] crosswordAnswers = { "MABINI"
-                                        , "RIZAL" };
-
     public static int correctAnswer = 0;
 
     public static bool victory = false;

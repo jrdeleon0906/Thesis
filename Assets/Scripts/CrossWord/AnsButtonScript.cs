@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.CrossWord;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -12,7 +13,7 @@ public class AnsButtonScript : MonoBehaviour, IPointerEnterHandler, IPointerUpHa
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        foreach (var item in CrossWordScript.crosswordAnswers)
+        foreach (var item in CrossWordAnswers.crosswordAnswers)
         {
             if (item.ToLower() == CrossWordScript.selectedCharacters.ToLower())
             {
@@ -42,7 +43,7 @@ public class AnsButtonScript : MonoBehaviour, IPointerEnterHandler, IPointerUpHa
             }
         }
 
-        if (CrossWordScript.correctAnswer == CrossWordScript.crosswordAnswers.Length)
+        if (CrossWordScript.correctAnswer == CrossWordAnswers.crosswordAnswers.Length)
         {
             CrossWordScript.victory = true;
         }
