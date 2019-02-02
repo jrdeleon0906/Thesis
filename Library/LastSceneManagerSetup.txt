@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Thesis.unity
+- path: Assets/Scenes/4pic/PicWords.unity
   isLoaded: 1
   isActive: 1
