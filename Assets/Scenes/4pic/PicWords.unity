@@ -1439,7 +1439,7 @@ MonoBehaviour:
   NextStage: {fileID: 2800000, guid: 1595c0bc8d0bd334f9ae7c15d271717b, type: 3}
   BackToMainMenu: {fileID: 2800000, guid: d4156d0d3f915094183d3e95de6064a5, type: 3}
   GameOverTexture: {fileID: 2800000, guid: 9b05a0102735eff46bbee2aae323dc56, type: 3}
-  timer: 1
+  timer: 30
 --- !u!1001 &487080765
 Prefab:
   m_ObjectHideFlags: 0
