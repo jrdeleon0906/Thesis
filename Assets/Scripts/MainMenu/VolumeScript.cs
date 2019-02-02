@@ -10,7 +10,6 @@ public class VolumeScript : MonoBehaviour, IEndDragHandler {
     public void OnEndDrag(PointerEventData eventData)
     {
         music.volume = volume.value;
-        volumeValue = volume.value;
     }
 }
     
