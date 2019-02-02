@@ -15,7 +15,7 @@ public class CrossWordScript : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
+        victory = false;
 	}
 	
 	// Update is called once per frame

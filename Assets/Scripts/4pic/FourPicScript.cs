@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class FourPicScript : FourPicLogicScript
 {
@@ -10,20 +11,27 @@ public class FourPicScript : FourPicLogicScript
     public GameObject Pic;
     public GameObject AnswerBox;
     public GameObject ChoicesBox;
+    public GameObject TimerGameObject;
+    
 
     public Texture ForuPicBg;
     public Texture NextStage;
     public Texture BackToMainMenu;
+    public Texture GameOverTexture;
 
     public static bool victory = false;
+    bool gameOver = false;
 
     private QuestionAndAnswers question;
     private List<int> previousQuestion = new List<int>();
 
     public static string questionAnswer;
 
+    public float timer = 30;
+
     public void Start()
     {
+        victory = false;
 
         List<int> tempIndex = new List<int>();
         for (int i = 0; i < QandA.Length; i++)
@@ -45,6 +53,15 @@ public class FourPicScript : FourPicLogicScript
 
     public void Update()
     {
+        if (!gameOver)
+        {
+            timer -= Time.deltaTime;
+            TimerGameObject.GetComponentInChildren<Text>().text = timer.ToString("0.0");
+            if (timer < 0)
+            {
+                gameOver = true;
+            }
+        }
     }
 
     private void DestroyGameObjects(string objectTag)
@@ -74,7 +91,6 @@ public class FourPicScript : FourPicLogicScript
 
                 if (QandA.Length == previousQuestion.Count)
                 {
-
                     SceneManager.LoadScene(ConstStrings.MainMenuScene, LoadSceneMode.Single);
                 }
                 else
@@ -90,6 +106,32 @@ public class FourPicScript : FourPicLogicScript
                 SceneManager.LoadScene(ConstStrings.MainMenuScene, LoadSceneMode.Single);
             }
 
+        }
+
+        if (gameOver)
+        {
+            GUI.backgroundColor = Color.clear;
+
+            DestroyGameObjects(ConstStrings.PicTags);
+            DestroyGameObjects(ConstStrings.PicsAnsBox);
+            DestroyGameObjects(ConstStrings.PicsChoices);
+            DestroyGameObjects(questionAnswer);
+            
+            DestroyImmediate(GameObject.Find(ConstStrings.PauseBtn));
+
+            GUI.DrawTexture(new Rect(
+                Screen.width * .5f - (Screen.width * .3f / 2)
+                , Screen.height * .5f - (Screen.height * .4f)
+                , Screen.width * .3f
+                , Screen.height * .3f),GameOverTexture);
+
+            if (GUI.Button(new Rect(Screen.width * .5f - (Screen.width  * .5f / 2)
+                , Screen.height * .5f - (Screen.height * .1f)
+                , Screen.width * .5f
+                , Screen.width * .5f), BackToMainMenu))
+            {
+                SceneManager.LoadScene(ConstStrings.MainMenuScene, LoadSceneMode.Single);
+            }
         }
     }
 }

@@ -45,7 +45,8 @@ public static class ConstStrings
 
     public const string GameCategoryHolder = "GameCategory";
     public const string GameModeHolder = "GameMode";
-    public const string InitialHolder = "Initial"; 
+    public const string InitialHolder = "Initial";
+    public const string SettingHolder = "SettingHolder";
 
     public const string Canvas = "Canvas";
 

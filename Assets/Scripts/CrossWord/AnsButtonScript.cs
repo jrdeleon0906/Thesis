@@ -7,8 +7,12 @@ public class AnsButtonScript : MonoBehaviour, IPointerEnterHandler, IPointerUpHa
 {
     public void OnPointerEnter(PointerEventData eventData)
     {
-        GetComponent<Image>().color = Color.red;
-        CrossWordScript.selectedCharacters += this.gameObject.GetComponentInChildren<Text>().text;
+
+        if (GetComponent<Image>().color != Color.red)
+        {
+            GetComponent<Image>().color = Color.red;
+            CrossWordScript.selectedCharacters += this.gameObject.GetComponentInChildren<Text>().text;
+        }
     }
 
     public void OnPointerUp(PointerEventData eventData)
