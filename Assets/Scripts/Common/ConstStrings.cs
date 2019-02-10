@@ -11,6 +11,7 @@ public static class ConstStrings
     public const string Hint = "Hint";
     public const string AnsPlaceHolder = "AnsPlaceHolder";
     public const string PicHolder = "PicHolder";
+    public const string PicWordHighScore = "PicWordHighScore";
     #endregion
 
     #region Xword
@@ -28,6 +29,7 @@ public static class ConstStrings
     #region MainMenuButtons
     public const string PlayBtn = "PlayBtn";
     public const string SettingsBtn = "SettingsBtn";
+    public const string HighScoreBtn = "HighScoreBtn";
     public const string QuitBtn = "QuitBtn";
     public const string PicWordBtn = "4Pic1WordBtn";
     public const string CrossWordBtn = "CrossWordBtn";
@@ -47,6 +49,7 @@ public static class ConstStrings
     public const string GameModeHolder = "GameMode";
     public const string InitialHolder = "Initial";
     public const string SettingHolder = "SettingHolder";
+    public const string HighScoreHolder = "HighScoreHolder";
 
     public const string Canvas = "Canvas";
 
@@ -54,5 +57,5 @@ public static class ConstStrings
     public const string PicWordsScene = "PicWords";
     public const string CrossWordScene = "CrossWord";
     public const string QandAScene = "QandA";
-
+    public const string PicWordHighScoreBoard = "PicWordHighScore";
 }

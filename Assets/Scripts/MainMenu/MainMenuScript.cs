@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -14,6 +15,7 @@ public class MainMenuScript : MonoBehaviour, IPointerDownHandler
         DisableEnableButtons(ConstStrings.GameModeHolder,false);
         DisableEnableButtons(ConstStrings.GameCategoryHolder, false);
         DisableEnableButtons(ConstStrings.SettingHolder, false);
+        DisableEnableButtons(ConstStrings.HighScoreHolder, false);
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -41,6 +43,53 @@ public class MainMenuScript : MonoBehaviour, IPointerDownHandler
                     case ConstStrings.SettingsBtn:
                         DisableEnableButtons(ConstStrings.SettingHolder, true);
                         DisableEnableButtons(ConstStrings.InitialHolder, false);
+                        break;
+                    case ConstStrings.HighScoreBtn:
+                        DisableEnableButtons(ConstStrings.HighScoreHolder, true);
+                        DisableEnableButtons(ConstStrings.GameModeHolder, false);
+                        DisableEnableButtons(ConstStrings.GameCategoryHolder, false);
+                        DisableEnableButtons(ConstStrings.SettingHolder, false);
+                        DisableEnableButtons(ConstStrings.InitialHolder, false);
+                        //DisableEnableButtons(ConstStrings.HighScoreHolder, false);
+
+                        GameObject[] highScoreBox = GameObject.FindGameObjectsWithTag(ConstStrings.PicWordHighScoreBoard);
+
+                        string[] scores = PlayerPrefs.GetString(ConstStrings.PicWordHighScore).Split(',');
+
+                        List<double> highScoresArray = new List<double>();
+
+                        foreach (string item in scores)
+                        {
+                            double toPut = 0.0f;
+                            double.TryParse(item, out toPut);
+                            highScoresArray.Add(toPut);
+                        }
+
+                        for(int i = 0; i < highScoresArray.Count -1; i++)
+                        {
+                            for (int x = 0; x < highScoresArray.Count - i - 1; x++)
+                            {
+                                if (highScoresArray[x] > highScoresArray[x+1])
+                                {
+                                    double temp = highScoresArray[x];
+                                    highScoresArray[x] = highScoresArray[x + 1];
+                                    highScoresArray[x + 1] = temp;
+                                }
+                            }
+                        }
+
+                        int index = 0;
+                        foreach (GameObject item in highScoreBox)
+                        {
+                            if (index < highScoresArray.Count)
+                            {
+                                item.GetComponentInChildren<Text>().text = highScoresArray[index].ToString("0.0");
+                            }
+
+                            index++;
+                        }
+
+
                         break;
                     case ConstStrings.QuitBtn:
                             Application.Quit();
@@ -88,6 +137,12 @@ public class MainMenuScript : MonoBehaviour, IPointerDownHandler
             if (text != null)
             {
                 text.enabled = isEnable;
+            }
+
+            Slider slider = transformObject.GetComponentInChildren<Slider>();
+            if (slider != null)
+            {
+                slider.enabled = isEnable;
             }
         }
     }

@@ -18,6 +18,7 @@ TagManager:
   - QAndAQuestion
   - QAndAOtherChoice
   - Volume
+  - PicWordHighScore
   layers:
   - Default
   - TransparentFX

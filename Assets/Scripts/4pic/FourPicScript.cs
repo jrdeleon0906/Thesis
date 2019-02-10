@@ -32,6 +32,7 @@ public class FourPicScript : FourPicLogicScript
     public void Start()
     {
         victory = false;
+        Time.timeScale = 1;
 
         List<int> tempIndex = new List<int>();
         for (int i = 0; i < QandA.Length; i++)
@@ -42,7 +43,7 @@ public class FourPicScript : FourPicLogicScript
 
         int indexOfQuestion = tempIndex[Random.Range(0, tempIndex.Count)];
         previousQuestion.Add(indexOfQuestion);
-        question = QandA[0];
+        question = QandA[indexOfQuestion];
 
         ShowQuestionsAndAnswer(question);
         StartInstantiateOfChoicesBox(question, ChoicesBox);
@@ -96,6 +97,8 @@ public class FourPicScript : FourPicLogicScript
                 else
                 {
                     victory = !victory;
+                    string previousHighScore = PlayerPrefs.GetString(ConstStrings.PicWordHighScore);
+                    PlayerPrefs.SetString(ConstStrings.PicWordHighScore, previousHighScore + "," + timer.ToString("0.0"));
                     Start();
                 }
 
