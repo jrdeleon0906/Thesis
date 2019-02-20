@@ -107,7 +107,7 @@ public class MainMenuScript : MonoBehaviour, IPointerDownHandler
                             SceneManager.LoadScene(ConstStrings.MainMenuScene);
                         break;
                     case ConstStrings.AmericaBtn:
-                    case ConstStrings.ChineseBtn:
+                    case ConstStrings.JapanBtn:
                     case ConstStrings.SpanishBtn:
                         DisableEnableButtons(ConstStrings.GameModeHolder, true);
                         DisableEnableButtons(ConstStrings.GameCategoryHolder, false);

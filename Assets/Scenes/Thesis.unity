@@ -279,7 +279,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 0.0
 --- !u!222 &160083697
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -551,8 +551,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1508228183}
-  - {fileID: 538765043}
   - {fileID: 701948154}
+  - {fileID: 538765043}
   - {fileID: 1063693159}
   - {fileID: 759394121}
   - {fileID: 1774309601}
@@ -791,7 +791,7 @@ Transform:
   - {fileID: 618070508}
   - {fileID: 1143531749}
   m_Father: {fileID: 472005158}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &570628978
 GameObject:
@@ -1135,7 +1135,7 @@ Transform:
   - {fileID: 165057723}
   - {fileID: 570628979}
   m_Father: {fileID: 472005158}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &717352112
 GameObject:
@@ -1326,7 +1326,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 0.0
 --- !u!222 &744926676
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3268,7 +3268,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 0.0
 --- !u!222 &1717535975
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3379,7 +3379,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 0.0
 --- !u!222 &1820531934
 CanvasRenderer:
   m_ObjectHideFlags: 0

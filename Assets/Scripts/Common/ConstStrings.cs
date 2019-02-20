@@ -41,7 +41,7 @@ public static class ConstStrings
     public const string BackToMainMenuHolder = "BackToMainMenuPlaceHolder";
     public const string BackToMainMenuBtn = "BackToMainMenuBtn";
 
-    public const string ChineseBtn = "Chinese";
+    public const string JapanBtn = "Japan";
     public const string SpanishBtn = "Spanish";
     public const string AmericaBtn = "American";
 
