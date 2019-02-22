@@ -19,6 +19,8 @@ TagManager:
   - QAndAOtherChoice
   - Volume
   - PicWordHighScore
+  - Silang
+  - Lapu
   layers:
   - Default
   - TransparentFX

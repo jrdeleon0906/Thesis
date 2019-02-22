@@ -2,6 +2,7 @@
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using System.Linq;
 
 public class FourPicScript : FourPicLogicScript
 {
@@ -35,7 +36,11 @@ public class FourPicScript : FourPicLogicScript
         Time.timeScale = 1;
 
         List<int> tempIndex = new List<int>();
-        for (int i = 0; i < QandA.Length; i++)
+
+        List<QuestionAndAnswers> perEraQuestions = new List<QuestionAndAnswers>();
+        perEraQuestions = QandA.Where(x => x.Era == KeepMusicScript.Era).ToList();
+
+        for (int i = 0; i < perEraQuestions.Count; i++)
         {
             if (!previousQuestion.Contains(i))
             tempIndex.Add(i);
@@ -43,7 +48,7 @@ public class FourPicScript : FourPicLogicScript
 
         int indexOfQuestion = tempIndex[Random.Range(0, tempIndex.Count)];
         previousQuestion.Add(indexOfQuestion);
-        question = QandA[indexOfQuestion];
+        question = perEraQuestions[indexOfQuestion];
 
         ShowQuestionsAndAnswer(question);
         StartInstantiateOfChoicesBox(question, ChoicesBox);

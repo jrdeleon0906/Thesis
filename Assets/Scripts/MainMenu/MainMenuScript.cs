@@ -6,9 +6,7 @@ using UnityEngine.UI;
 
 public class MainMenuScript : MonoBehaviour, IPointerDownHandler
 {
-    //public AudioSource music;
     public static float volume;
-    //public float volumeTemp;
 
     public void Start()
     {
@@ -88,8 +86,6 @@ public class MainMenuScript : MonoBehaviour, IPointerDownHandler
 
                             index++;
                         }
-
-
                         break;
                     case ConstStrings.QuitBtn:
                             Application.Quit();
@@ -107,8 +103,17 @@ public class MainMenuScript : MonoBehaviour, IPointerDownHandler
                             SceneManager.LoadScene(ConstStrings.MainMenuScene);
                         break;
                     case ConstStrings.AmericaBtn:
-                    case ConstStrings.JapanBtn:
+                        KeepMusicScript.Era = ConstStrings.AmericaBtn;
+                        DisableEnableButtons(ConstStrings.GameModeHolder, true);
+                        DisableEnableButtons(ConstStrings.GameCategoryHolder, false);
+                        break;
+                    case ConstStrings.ChineseBtn:
+                        KeepMusicScript.Era = ConstStrings.ChineseBtn;
+                        DisableEnableButtons(ConstStrings.GameModeHolder, true);
+                        DisableEnableButtons(ConstStrings.GameCategoryHolder, false);
+                        break;
                     case ConstStrings.SpanishBtn:
+                        KeepMusicScript.Era = ConstStrings.SpanishBtn;
                         DisableEnableButtons(ConstStrings.GameModeHolder, true);
                         DisableEnableButtons(ConstStrings.GameCategoryHolder, false);
                         break;

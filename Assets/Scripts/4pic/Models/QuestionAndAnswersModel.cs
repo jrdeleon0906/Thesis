@@ -3,7 +3,7 @@
 [System.Serializable]
 public class QuestionAndAnswers {
 
-    public Sprite[] Images = new Sprite[4];
+    public string Era;
     public string Answer;
     public string Hint;
 

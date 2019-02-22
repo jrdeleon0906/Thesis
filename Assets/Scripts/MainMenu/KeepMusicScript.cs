@@ -3,6 +3,7 @@
 public class KeepMusicScript : MonoBehaviour {
 
     private static KeepMusicScript instance = null;
+    public static string Era = "";
 
     private void Awake()
     {

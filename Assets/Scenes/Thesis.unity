@@ -3468,7 +3468,7 @@ GameObject:
   - component: {fileID: 1948940871}
   - component: {fileID: 1948940870}
   m_Layer: 5
-  m_Name: Japan
+  m_Name: Chinese
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
