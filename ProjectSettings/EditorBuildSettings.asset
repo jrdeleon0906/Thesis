@@ -12,8 +12,44 @@ EditorBuildSettings:
     path: Assets/Scenes/4pic/PicWords.unity
     guid: cf12ee11b81a1bf47886b133c8a0246a
   - enabled: 1
-    path: Assets/Scenes/CrossWord/CrossWord.unity
+    path: Assets/Scenes/CrossWord/CrossWord-Spanish1.unity
     guid: 50bb93070ef756c40b404b3893fa5cc6
   - enabled: 1
-    path: Assets/Scenes/QandA/QandA.unity
+    path: Assets/Scenes/QandA/QandA-Spanish1.unity
     guid: d1ff1165c92dbf2429bebb97513cf431
+  - enabled: 1
+    path: Assets/Scenes/CrossWord/CrossWord-American1.unity
+    guid: fb3a2ca081feb5c40b51905d512e3d7d
+  - enabled: 1
+    path: Assets/Scenes/CrossWord/CrossWord-American2.unity
+    guid: 3ea044d81af5ea941a07a46bb0d5fc79
+  - enabled: 1
+    path: Assets/Scenes/CrossWord/CrossWord-Chinese1.unity
+    guid: 3ef64e0c175fa5a4d9a6ed002b501ac4
+  - enabled: 1
+    path: Assets/Scenes/CrossWord/CrossWord-Spanish2.unity
+    guid: 54df8e15357c65d44a4f03b5e363255c
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA-American1.unity
+    guid: 136f20cad922e934a9232f25c7deca68
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA-American2.unity
+    guid: ef153bdabda55a547943ee005686a9f1
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA-Chinese1.unity
+    guid: 6b5f4ae8c2439b742a688e48c6bd80d1
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA-American3.unity
+    guid: a993621e86ea8084ebd9ae4260839f34
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA-Spanish2.unity
+    guid: a8010455d007f2445a14a77c9067a1a3
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA-Spanish3.unity
+    guid: c898c0a4a253e554ab12da9340aa0547
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA-Chinese2.unity
+    guid: 2bf4b3498ccd5e94387acbadcedb09f1
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA-Chinese3.unity
+    guid: 641e4a4e20be22a42a1fcba8ed2d1dc1

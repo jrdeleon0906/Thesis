@@ -25,7 +25,7 @@ public class AnsButtonScript : MonoBehaviour, IPointerEnterHandler, IPointerUpHa
 
                 if (toShow != null)
                 {
-                    GameObject.Find("CrossWordBox4").GetComponentInChildren<Text>().enabled = true;
+                    //GameObject.Find("CrossWordBox4").GetComponentInChildren<Text>().enabled = true;
                     foreach (var child in toShow)
                     {
                         child.GetComponentInChildren<Text>().enabled = true;
@@ -47,7 +47,7 @@ public class AnsButtonScript : MonoBehaviour, IPointerEnterHandler, IPointerUpHa
             }
         }
 
-        if (CrossWordScript.correctAnswer == CrossWordAnswers.crosswordAnswers.Length)
+        if (CrossWordScript.correctAnswer == 2)
         {
             CrossWordScript.victory = true;
         }

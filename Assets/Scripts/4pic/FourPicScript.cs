@@ -25,10 +25,12 @@ public class FourPicScript : FourPicLogicScript
 
     private QuestionAndAnswers question;
     private List<int> previousQuestion = new List<int>();
+    private List<QuestionAndAnswers> perEraQuestions = new List<QuestionAndAnswers>();
 
     public static string questionAnswer;
 
     public float timer = 30;
+
 
     public void Start()
     {
@@ -37,7 +39,6 @@ public class FourPicScript : FourPicLogicScript
 
         List<int> tempIndex = new List<int>();
 
-        List<QuestionAndAnswers> perEraQuestions = new List<QuestionAndAnswers>();
         perEraQuestions = QandA.Where(x => x.Era == KeepMusicScript.Era).ToList();
 
         for (int i = 0; i < perEraQuestions.Count; i++)
@@ -95,7 +96,7 @@ public class FourPicScript : FourPicLogicScript
                 DestroyGameObjects(ConstStrings.PicsChoices);
                 DestroyGameObjects(questionAnswer);
 
-                if (QandA.Length == previousQuestion.Count)
+                if (perEraQuestions.Count == previousQuestion.Count)
                 {
                     SceneManager.LoadScene(ConstStrings.MainMenuScene, LoadSceneMode.Single);
                 }

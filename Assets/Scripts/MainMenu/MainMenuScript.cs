@@ -94,7 +94,15 @@ public class MainMenuScript : MonoBehaviour, IPointerDownHandler
                             SceneManager.LoadScene(ConstStrings.PicWordsScene);
                         break;
                     case ConstStrings.CrossWordBtn:
-                        SceneManager.LoadScene(ConstStrings.CrossWordScene);
+                        int randomNum = 1;
+
+                        if (KeepMusicScript.Era != ConstStrings.ChineseBtn)
+                        {
+                            randomNum = Random.Range(1, 3);
+                        }
+
+                        string toLoad = string.Format("{0}-{1}{2}",ConstStrings.CrossWordScene,KeepMusicScript.Era,randomNum);
+                        SceneManager.LoadScene(toLoad);
                         break;
                     case ConstStrings.QAndABtn:
                         SceneManager.LoadScene(ConstStrings.QandAScene);

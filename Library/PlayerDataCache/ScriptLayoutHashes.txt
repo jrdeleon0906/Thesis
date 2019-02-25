@@ -2,8 +2,20 @@ Android
 SceneListBegin?
 Assets/Scenes/Thesis.unity
 Assets/Scenes/4pic/PicWords.unity
-Assets/Scenes/CrossWord/CrossWord.unity
-Assets/Scenes/QandA/QandA.unity
+Assets/Scenes/CrossWord/CrossWord-Spanish1.unity
+Assets/Scenes/QandA/QandA-Spanish1.unity
+Assets/Scenes/CrossWord/CrossWord-American1.unity
+Assets/Scenes/CrossWord/CrossWord-American2.unity
+Assets/Scenes/CrossWord/CrossWord-Chinese1.unity
+Assets/Scenes/CrossWord/CrossWord-Spanish2.unity
+Assets/Scenes/QandA/QandA-American1.unity
+Assets/Scenes/QandA/QandA-American2.unity
+Assets/Scenes/QandA/QandA-Chinese1.unity
+Assets/Scenes/QandA/QandA-American3.unity
+Assets/Scenes/QandA/QandA-Spanish2.unity
+Assets/Scenes/QandA/QandA-Spanish3.unity
+Assets/Scenes/QandA/QandA-Chinese2.unity
+Assets/Scenes/QandA/QandA-Chinese3.unity
 SceneListEnd?
 cdb019d087e674c18fff8c932c957880 Assembly-CSharp.dll:.CrossWordScript
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.NextStageGUI

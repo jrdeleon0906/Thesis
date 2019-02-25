@@ -19,10 +19,10 @@ public class QandAScript : MonoBehaviour
         {
             GUI.backgroundColor = Color.clear;
 
-            if (GUI.Button(new Rect(Screen.width * .05f, Screen.height * .7f, Screen.width * .2f, Screen.width * .2f), NextStage))
-            {
-                SceneManager.LoadScene(ConstStrings.MainMenuScene, LoadSceneMode.Single);
-            }
+            //if (GUI.Button(new Rect(Screen.width * .05f, Screen.height * .7f, Screen.width * .2f, Screen.width * .2f), NextStage))
+            //{
+            //    SceneManager.LoadScene(ConstStrings.MainMenuScene, LoadSceneMode.Single);
+            //}
 
             if (GUI.Button(new Rect(Screen.width * .75f, Screen.height * .7f, Screen.width * .2f, Screen.width * .2f), BackToMainMenu))
             {
