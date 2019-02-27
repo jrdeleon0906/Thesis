@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Feb 27 18:50:18 CST 2019
+#Wed Feb 27 18:54:57 CST 2019
 122.file=C\:\\Users\\x\\Desktop\\test\\Unity\\Projects\\Thesis\\Temp\\gradleOut\\build\\intermediates\\assets\\release\\bin\\Data\\sharedassets1.assets.split18
 60.set=ASSET
 129.file=C\:\\Users\\x\\Desktop\\test\\Unity\\Projects\\Thesis\\Temp\\gradleOut\\build\\intermediates\\assets\\release\\bin\\Data\\Managed\\UnityEngine.UnityConnectModule.dll
