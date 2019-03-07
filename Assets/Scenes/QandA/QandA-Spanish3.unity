@@ -579,8 +579,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: he actually came from a middle class family and had Spanish blood through
-    his mestiza mother
+  m_Text: she also fought in the battlefield to overthrow the Spanish official in
+    Ilocos
 --- !u!222 &965266154
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -601,7 +601,7 @@ GameObject:
   - component: {fileID: 983507107}
   m_Layer: 5
   m_Name: Ans1
-  m_TagString: QAndAAns
+  m_TagString: QAndAOtherChoice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -983,7 +983,7 @@ GameObject:
   - component: {fileID: 1549226445}
   m_Layer: 5
   m_Name: Ans3
-  m_TagString: QAndAOtherChoice
+  m_TagString: QAndAAns
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

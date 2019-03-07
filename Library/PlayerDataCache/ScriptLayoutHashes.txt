@@ -16,6 +16,20 @@ Assets/Scenes/QandA/QandA-Spanish2.unity
 Assets/Scenes/QandA/QandA-Spanish3.unity
 Assets/Scenes/QandA/QandA-Chinese2.unity
 Assets/Scenes/QandA/QandA-Chinese3.unity
+Assets/Scenes/QandA/QandA-American4.unity
+Assets/Scenes/QandA/QandA-American5.unity
+Assets/Scenes/QandA/QandA-American6.unity
+Assets/Scenes/QandA/QandA-American7.unity
+Assets/Scenes/QandA/QandA-American8.unity
+Assets/Scenes/QandA/QandA-American9.unity
+Assets/Scenes/QandA/QandA-American10.unity
+Assets/Scenes/QandA/QandA-Chinese4.unity
+Assets/Scenes/QandA/QandA-Chinese6.unity
+Assets/Scenes/QandA/QandA-Chinese5.unity
+Assets/Scenes/QandA/QandA-Spanish4.unity
+Assets/Scenes/QandA/QandA-Spanish5.unity
+Assets/Scenes/QandA/QandA-Spanish6.unity
+Assets/Scenes/QandA/QandA-Spanish7.unity
 SceneListEnd?
 cdb019d087e674c18fff8c932c957880 Assembly-CSharp.dll:.CrossWordScript
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.NextStageGUI

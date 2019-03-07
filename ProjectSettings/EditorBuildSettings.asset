@@ -53,3 +53,45 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/QandA/QandA-Chinese3.unity
     guid: 641e4a4e20be22a42a1fcba8ed2d1dc1
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA-American4.unity
+    guid: 1c1a5dd3bf226544dbb97a4059774fe1
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA-American5.unity
+    guid: bec0a36ac1fc34940a43c6ff6b7045af
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA-American6.unity
+    guid: caaa59522affc934885977812a8286b8
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA-American7.unity
+    guid: 83635fd3403ca3f439210f5b8d0d386d
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA-American8.unity
+    guid: 9ef2a53abae6a6b4299c98f23ab9bc2d
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA-American9.unity
+    guid: 5c0eb332068eb824dbe1ace1eacace1e
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA-American10.unity
+    guid: 11d73b43d1a135a409762d1e17a4ed8f
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA-Chinese4.unity
+    guid: 377ed71f7b2dd6c4cbd9086415a9ce1d
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA-Chinese6.unity
+    guid: afc7a05d46a092c439d34961c28c24cb
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA-Chinese5.unity
+    guid: 3486f02394dab7846ae360121a385f0c
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA-Spanish4.unity
+    guid: 3f2462c89fee5cb49a0a438e7436b790
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA-Spanish5.unity
+    guid: 30c7305a4e16a3f46953ff6d1599f471
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA-Spanish6.unity
+    guid: b0f19f92d2522d04aadf6ac4c86cd95e
+  - enabled: 1
+    path: Assets/Scenes/QandA/QandA-Spanish7.unity
+    guid: 1b3cdac62f921b24dbbd9e13f30c1edd
