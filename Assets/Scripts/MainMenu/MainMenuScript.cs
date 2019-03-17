@@ -105,7 +105,16 @@ public class MainMenuScript : MonoBehaviour, IPointerDownHandler
                         SceneManager.LoadScene(toLoad);
                         break;
                     case ConstStrings.QAndABtn:
-                        SceneManager.LoadScene(ConstStrings.QandAScene);
+
+                        int randNum = 1;
+                        if (KeepMusicScript.Era != ConstStrings.ChineseBtn)
+                        {
+                            randNum = Random.Range(1, 3);
+                        }
+
+                        string QandALoad = string.Format("{0}-{1}{2}", ConstStrings.QandAScene, KeepMusicScript.Era, randNum);
+                        SceneManager.LoadScene(QandALoad);
+
                         break;
                     case ConstStrings.BackToMainMenuBtn:
                             SceneManager.LoadScene(ConstStrings.MainMenuScene);

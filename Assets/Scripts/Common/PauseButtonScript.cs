@@ -23,7 +23,7 @@ public class PauseButtonScript : MonoBehaviour, IPointerDownHandler
                 break;
             default:
                 break;
-        }
+        }   
     }
 
     private void PauseUnpauseScene()
@@ -31,37 +31,58 @@ public class PauseButtonScript : MonoBehaviour, IPointerDownHandler
         Scene scene = SceneManager.GetActiveScene();
         List<GameObject> pics = new List<GameObject>();
 
-        switch (scene.name)
+        if (scene.name.Contains(ConstStrings.CrossWordScene))
         {
-            case ConstStrings.PicWordsScene:
-
-                pics.AddRange(GameObject.FindGameObjectsWithTag(FourPicScript.questionAnswer));
-                pics.AddRange(GameObject.FindGameObjectsWithTag(ConstStrings.PicsChoices));
-                pics.Add(GameObject.Find(ConstStrings.Hint));
-                Pause(scene.name, pics);
-
-
-                break;
-            case ConstStrings.CrossWordScene:
-                pics.AddRange(GameObject.FindGameObjectsWithTag(ConstStrings.XWordChoice));
-                //foreach (string item in CrossWordAnswers.crosswordAnswers)
-                //{
-                //    pics.AddRange(GameObject.FindGameObjectsWithTag(item));
-                //}
-
-                Pause(scene.name, pics);
-                break;
-            case ConstStrings.QandAScene:
-                pics.AddRange(GameObject.FindGameObjectsWithTag(ConstStrings.QandAAns));
-                pics.AddRange(GameObject.FindGameObjectsWithTag(ConstStrings.QAndAOtherChoice));
-                pics.AddRange(GameObject.FindGameObjectsWithTag(ConstStrings.QAndAQuestion));
-                Pause(scene.name, pics);
-
-
-                break;
-            default:
-                break;
+            pics.AddRange(GameObject.FindGameObjectsWithTag(ConstStrings.XWordChoice));
+            Pause(scene.name, pics);
         }
+        else if (scene.name.Contains(ConstStrings.PicWordsScene))
+        {
+            pics.AddRange(GameObject.FindGameObjectsWithTag(FourPicScript.questionAnswer));
+            pics.AddRange(GameObject.FindGameObjectsWithTag(ConstStrings.PicsChoices));
+            pics.Add(GameObject.Find(ConstStrings.Hint));
+            Pause(scene.name, pics);
+        }
+        else if (scene.name.Contains(ConstStrings.QandAScene))
+        {
+            pics.AddRange(GameObject.FindGameObjectsWithTag(ConstStrings.QandAAns));
+            pics.AddRange(GameObject.FindGameObjectsWithTag(ConstStrings.QAndAOtherChoice));
+            pics.AddRange(GameObject.FindGameObjectsWithTag(ConstStrings.QAndAQuestion));
+            Pause(scene.name, pics);
+        }
+
+
+        //switch (scene.name)
+        //{
+        //    case ConstStrings.PicWordsScene:
+
+        //        pics.AddRange(GameObject.FindGameObjectsWithTag(FourPicScript.questionAnswer));
+        //        pics.AddRange(GameObject.FindGameObjectsWithTag(ConstStrings.PicsChoices));
+        //        pics.Add(GameObject.Find(ConstStrings.Hint));
+        //        Pause(scene.name, pics);
+
+
+        //        break;
+        //    case ConstStrings.CrossWordScene:
+        //        pics.AddRange(GameObject.FindGameObjectsWithTag(ConstStrings.XWordChoice));
+        //        //foreach (string item in CrossWordAnswers.crosswordAnswers)
+        //        //{
+        //        //    pics.AddRange(GameObject.FindGameObjectsWithTag(item));
+        //        //}
+
+        //        Pause(scene.name, pics);
+        //        break;
+        //    case ConstStrings.QandAScene:
+        //        pics.AddRange(GameObject.FindGameObjectsWithTag(ConstStrings.QandAAns));
+        //        pics.AddRange(GameObject.FindGameObjectsWithTag(ConstStrings.QAndAOtherChoice));
+        //        pics.AddRange(GameObject.FindGameObjectsWithTag(ConstStrings.QAndAQuestion));
+        //        Pause(scene.name, pics);
+
+
+        //        break;
+        //    default:
+        //        break;
+        //}
 
 
        
