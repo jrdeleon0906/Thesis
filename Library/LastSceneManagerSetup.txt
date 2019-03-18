@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/4pic/PicWords.unity
+- path: Assets/Scenes/QandA/QandA-American7.unity
   isLoaded: 1
   isActive: 1
