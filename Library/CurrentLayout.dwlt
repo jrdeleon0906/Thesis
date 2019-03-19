@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 711, y: 492}
   m_MaxSize: {x: 18006, y: 14042}
   vertical: 0
-  controlID: 133
+  controlID: 11615
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 434, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 1
-  controlID: 134
+  controlID: 11616
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 135
+  controlID: 11617
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -231,7 +231,7 @@ MonoBehaviour:
   m_MinSize: {x: 434, y: 271}
   m_MaxSize: {x: 14004, y: 10021}
   vertical: 0
-  controlID: 64
+  controlID: 11570
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -412,14 +412,14 @@ MonoBehaviour:
     height: 383
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 371.67027162977865
+  lastFramingTime: 7405.865944070032
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 101.84902, y: 285.15616, z: -0.5}
+    m_Target: {x: 124.163994, y: 139.41267, z: -0.203125}
     speed: 2
-    m_Value: {x: 101.84902, y: 285.15616, z: -0.5}
+    m_Value: {x: 124.163994, y: 139.41267, z: -0.203125}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -447,9 +447,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 248.25127
+    m_Target: 90.73031
     speed: 2
-    m_Value: 248.25127
+    m_Value: 90.73031
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -490,9 +490,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 96070000
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 92f3feff7cf9feff74fafeffa0fbfeffc4fbfeffe8fbfeff0cfcfeff30fcfeff54fcfeff78fcfeff9cfcfeffc0fcfeffe4fcfeff08fdfeff2cfdfeff50fdfeff74fdfeff98fdfeffbcfdfeffe0fdfeff04fefeff28fefeff4cfefeff70fefeff74fefeff98fefeffbcfefeffe0fefeff04fffeff28fffeff50fffeff9a04ffffae04ffff8845ffff8248ffffb049ffffde4affff0c4cffff3a4dfffff651ffff8055ffff4c59ffffbe5dfffff25effffa2c0ffffc2edffff72f3ffff9efbffff00000000382e0000ac2f0000ba330000a8380000ec3b0000303f000074420000f44c0000
+    m_ExpandedIDs: 2cd3f9ff0ad4f9ff3ad5f9ff62d5f9ff8ad5f9ffb2d5f9ffdad5f9ff02d6f9ff2ad6f9ff52d6f9ff7ad6f9ffa2d6f9ffcad6f9fff2d6f9ff1ad7f9ff42d7f9ff6ad7f9ff92d7f9ffbad7f9ffe2d7f9ff0ad8f9ff32d8f9ff5ad8f9ff82d8f9ffaad8f9ffd2d8f9fffad8f9ff22d9f9ff4ed9f9ff7ad9f9ffcadef9ffe4def9ffecdef9ff2ae2f9ff6834faff5835faff1a3afaff645ffaff0671faff867ffaffb486faff9e87faffca88faffee88faff1289faff3689faff5a89faff7e89faffa289faffc689faffea89faff0e8afaff328afaff568afaff7a8afaff9e8afaffc28afaffe68afaff0a8bfaff2e8bfaff528bfaff768bfaff9a8bfaffbe8bfaffe28bfaff068cfaff2a8cfaff4e8cfaff768cfaff9e8cfaffea91faff0092faff0492faff1844feff5646feffd651feffbc53feff7657feff5458feff4e59feff7e5afeff625bfeff225efeff2a60feff2466feff7c90feff8cecfeff902effff9c36ffff303effffd842ffff4a47ffff6648ffff484cffffce4fffff1653ffffe057ffff8a5bffff7c5fffff6663ffff9667ffff206bffff066fffff2073ffff0076ffff907affffb47bffff307fffff7a82ffff3686ffff9a87ffff1a8bfffff68effff5a90ffff7e91ffff5e95ffff9a9affff3ca0ffffa0a1ffff04a3ffff68a4ffffd0a5ffff9efbffff00000000022a0000262f0000be2f0000f03000005e330000903400006436000096370000c83800009c3a0000d63b0000703c0000a43d0000d83e00000c4000004041000074420000a8430000de44000014460000484700007c480000504a0000844b0000b84c000062500000d252000028560000a46800004a6a0000b46a00001c6c000068980000129a0000a0a50000a2b0000054b10000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -511,7 +511,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 
   m_ExpandedScenes:
-  - QandA-American7
+  - ThesisCutScene
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -554,33 +554,33 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/MainMenu
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/MainMenu
+  - Assets/Scenes
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\x\Desktop\test\Unity\Projects\Thesis
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 11}
-    m_SelectedIDs: f0280000
-    m_LastClickedID: 10480
-    m_ExpandedIDs: 0000000096270000c02800004829000060290000ffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 60290000
+    m_LastClickedID: 10592
+    m_ExpandedIDs: 0000000096270000c028000060290000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 4pic
-      m_OriginalName: 4pic
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 10316
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 12}
     m_SearchString: 
@@ -594,7 +594,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009627000056280000c02800004829000060290000
+    m_ExpandedIDs: 0000000096270000c028000060290000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -625,15 +625,15 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000f6270000ac27000090270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: PicWords
-      m_OriginalName: PicWords
+      m_Name: CrossWord-American2
+      m_OriginalName: CrossWord-American2
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 10152
+      m_UserData: 10380
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
