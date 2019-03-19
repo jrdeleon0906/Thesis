@@ -38,6 +38,7 @@ public class PauseButtonScript : MonoBehaviour, IPointerDownHandler
             {
                 pics.AddRange(GameObject.FindGameObjectsWithTag(item));
             }
+
             pics.AddRange(GameObject.FindGameObjectsWithTag(ConstStrings.XWordText));
             Pause(scene.name, pics);
         }
@@ -133,6 +134,10 @@ public class PauseButtonScript : MonoBehaviour, IPointerDownHandler
             if (item.GetComponentInChildren<Text>() != null)
             {
                 item.GetComponentInChildren<Text>().enabled = showImage;
+            }
+            if (scene.Contains("CrossWord") && item.tag != ConstStrings.XWordChoice)
+            {
+                item.GetComponentInChildren<Text>().enabled = false;
             }
         }
     }
