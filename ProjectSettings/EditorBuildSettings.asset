@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/ThesisCutScene.unity
+    guid: 51d033fe9155e2d43868e9cce2e18307
+  - enabled: 1
     path: Assets/Scenes/Thesis.unity
     guid: d32a92e14ddf85d4ca42ebd268f064bc
   - enabled: 1

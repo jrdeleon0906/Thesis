@@ -34,6 +34,11 @@ public class PauseButtonScript : MonoBehaviour, IPointerDownHandler
         if (scene.name.Contains(ConstStrings.CrossWordScene))
         {
             pics.AddRange(GameObject.FindGameObjectsWithTag(ConstStrings.XWordChoice));
+            foreach (var item in CrossWordAnswers.crosswordAnswers)
+            {
+                pics.AddRange(GameObject.FindGameObjectsWithTag(item));
+            }
+            pics.AddRange(GameObject.FindGameObjectsWithTag(ConstStrings.XWordText));
             Pause(scene.name, pics);
         }
         else if (scene.name.Contains(ConstStrings.PicWordsScene))
@@ -121,7 +126,10 @@ public class PauseButtonScript : MonoBehaviour, IPointerDownHandler
 
         foreach (GameObject item in pics)
         {
-            item.GetComponent<Image>().enabled = showImage;
+            if (item.GetComponent<Image>() != null)
+            {
+                item.GetComponent<Image>().enabled = showImage;
+            }
             if (item.GetComponentInChildren<Text>() != null)
             {
                 item.GetComponentInChildren<Text>().enabled = showImage;

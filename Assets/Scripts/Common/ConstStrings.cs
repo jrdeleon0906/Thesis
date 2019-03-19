@@ -17,6 +17,7 @@ public static class ConstStrings
     #region Xword
 
     public const string XWordChoice = "XWordChoice";
+    public const string XWordText = "CrossWordText";
 
     #endregion
 

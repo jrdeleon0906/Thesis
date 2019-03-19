@@ -1,5 +1,6 @@
 Android
 SceneListBegin?
+Assets/Scenes/ThesisCutScene.unity
 Assets/Scenes/Thesis.unity
 Assets/Scenes/4pic/PicWords.unity
 Assets/Scenes/CrossWord/CrossWord-Spanish1.unity
@@ -183,3 +184,5 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.FourPicLogicScript
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ScrollUpThenMoveToNextScene
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.NextSceneOnClick

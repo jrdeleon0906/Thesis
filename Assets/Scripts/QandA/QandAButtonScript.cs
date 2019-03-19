@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +11,7 @@ public class QandAButtonScript : MonoBehaviour, IPointerDownHandler
     {
         if (eventData.selectedObject.tag == ConstStrings.QandAAns)
         {
+            GetComponent<Image>().color = Color.yellow;
             QandAScript.victory = true;
         }
     }

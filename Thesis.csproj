@@ -304,8 +304,10 @@
     <Compile Include="Assets\Scripts\MainMenu\MainMenuScript.cs" />
     <Compile Include="Assets\Scripts\MainMenu\VolumeScript.cs" />
     <Compile Include="Assets\Scripts\MasterScript.cs" />
+    <Compile Include="Assets\Scripts\NextSceneOnClick.cs" />
     <Compile Include="Assets\Scripts\QandA\QandAButtonScript.cs" />
     <Compile Include="Assets\Scripts\QandA\QandAScript.cs" />
+    <Compile Include="Assets\Scripts\ScrollUpThenMoveToNextScene.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
