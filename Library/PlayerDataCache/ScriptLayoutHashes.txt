@@ -1,7 +1,7 @@
 Android
 SceneListBegin?
-Assets/Scenes/ThesisCutScene.unity
 Assets/Scenes/Thesis.unity
+Assets/Scenes/About.unity
 Assets/Scenes/4pic/PicWords.unity
 Assets/Scenes/CrossWord/CrossWord-Spanish1.unity
 Assets/Scenes/QandA/QandA-Spanish1.unity
@@ -31,6 +31,10 @@ Assets/Scenes/QandA/QandA-Spanish4.unity
 Assets/Scenes/QandA/QandA-Spanish5.unity
 Assets/Scenes/QandA/QandA-Spanish6.unity
 Assets/Scenes/QandA/QandA-Spanish7.unity
+Assets/Scenes/America.unity
+Assets/Scenes/Japanese.unity
+Assets/Scenes/Spanish.unity
+Assets/Scenes/GameMode.unity
 SceneListEnd?
 cdb019d087e674c18fff8c932c957880 Assembly-CSharp.dll:.CrossWordScript
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.NextStageGUI

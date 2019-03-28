@@ -14,6 +14,7 @@ public class MainMenuScript : MonoBehaviour, IPointerDownHandler
         DisableEnableButtons(ConstStrings.GameCategoryHolder, false);
         DisableEnableButtons(ConstStrings.SettingHolder, false);
         DisableEnableButtons(ConstStrings.HighScoreHolder, false);
+        DisableEnableButtons(ConstStrings.AboutHolder, false);
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -117,22 +118,31 @@ public class MainMenuScript : MonoBehaviour, IPointerDownHandler
 
                         break;
                     case ConstStrings.BackToMainMenuBtn:
-                            SceneManager.LoadScene(ConstStrings.MainMenuScene);
+                        SceneManager.LoadScene(ConstStrings.MainMenuScene);
                         break;
                     case ConstStrings.AmericaBtn:
+                        SceneManager.LoadScene("America");
                         KeepMusicScript.Era = ConstStrings.AmericaBtn;
-                        DisableEnableButtons(ConstStrings.GameModeHolder, true);
-                        DisableEnableButtons(ConstStrings.GameCategoryHolder, false);
+                        //DisableEnableButtons(ConstStrings.GameModeHolder, true);
+                        //DisableEnableButtons(ConstStrings.GameCategoryHolder, false);
                         break;
                     case ConstStrings.ChineseBtn:
+                        SceneManager.LoadScene("Japanese");
                         KeepMusicScript.Era = ConstStrings.ChineseBtn;
-                        DisableEnableButtons(ConstStrings.GameModeHolder, true);
-                        DisableEnableButtons(ConstStrings.GameCategoryHolder, false);
+                        //DisableEnableButtons(ConstStrings.GameModeHolder, true);
+                        //DisableEnableButtons(ConstStrings.GameCategoryHolder, false);
                         break;
                     case ConstStrings.SpanishBtn:
+                        SceneManager.LoadScene("Spanish");
                         KeepMusicScript.Era = ConstStrings.SpanishBtn;
-                        DisableEnableButtons(ConstStrings.GameModeHolder, true);
-                        DisableEnableButtons(ConstStrings.GameCategoryHolder, false);
+                        //DisableEnableButtons(ConstStrings.GameModeHolder, true);
+                        //DisableEnableButtons(ConstStrings.GameCategoryHolder, false);
+                        break;
+                    case ConstStrings.About:
+                        SceneManager.LoadScene("About");
+                        break;
+                    case "Continue":
+                        SceneManager.LoadScene("GameMode");
                         break;
                     default:
                         break;
@@ -145,26 +155,29 @@ public class MainMenuScript : MonoBehaviour, IPointerDownHandler
     private static void DisableEnableButtons(string whatToDisable,bool isEnable)
     {
         GameObject tempGameObject = GameObject.Find(whatToDisable);
-        for (int i = 0; i < tempGameObject.transform.childCount; i++)
+        if (tempGameObject != null)
         {
-            Transform transformObject = tempGameObject.transform.GetChild(i);
-            Image image = transformObject.GetComponent<Image>();
-
-            if (image != null)
+            for (int i = 0; i < tempGameObject.transform.childCount; i++)
             {
-                image.enabled = isEnable;
-            }
+                Transform transformObject = tempGameObject.transform.GetChild(i);
+                Image image = transformObject.GetComponent<Image>();
 
-            Text text = transformObject.GetComponentInChildren<Text>();
-            if (text != null)
-            {
-                text.enabled = isEnable;
-            }
+                if (image != null)
+                {
+                    image.enabled = isEnable;
+                }
 
-            Slider slider = transformObject.GetComponentInChildren<Slider>();
-            if (slider != null)
-            {
-                slider.enabled = isEnable;
+                Text text = transformObject.GetComponentInChildren<Text>();
+                if (text != null)
+                {
+                    text.enabled = isEnable;
+                }
+
+                Slider slider = transformObject.GetComponentInChildren<Slider>();
+                if (slider != null)
+                {
+                    slider.enabled = isEnable;
+                }
             }
         }
     }

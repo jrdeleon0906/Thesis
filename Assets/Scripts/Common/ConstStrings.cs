@@ -36,6 +36,7 @@ public static class ConstStrings
     public const string CrossWordBtn = "CrossWordBtn";
     public const string QAndABtn = "QuestionAndAnswerBtn";
     public const string MainMenuBtn = "MainMenu";
+    public const string About = "About";
     #endregion
 
     public const string PauseBtn = "PauseButton";
@@ -51,6 +52,7 @@ public static class ConstStrings
     public const string InitialHolder = "Initial";
     public const string SettingHolder = "SettingHolder";
     public const string HighScoreHolder = "HighScoreHolder";
+    public const string AboutHolder = "AboutHolder";
 
     public const string Canvas = "Canvas";
 
