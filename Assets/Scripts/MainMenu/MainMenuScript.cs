@@ -10,11 +10,17 @@ public class MainMenuScript : MonoBehaviour, IPointerDownHandler
 
     public void Start()
     {
-        DisableEnableButtons(ConstStrings.GameModeHolder,false);
-        DisableEnableButtons(ConstStrings.GameCategoryHolder, false);
-        DisableEnableButtons(ConstStrings.SettingHolder, false);
-        DisableEnableButtons(ConstStrings.HighScoreHolder, false);
-        DisableEnableButtons(ConstStrings.AboutHolder, false);
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+
+        if (sceneName == "Thesis")
+        {
+            DisableEnableButtons(ConstStrings.GameModeHolder, false);
+            DisableEnableButtons(ConstStrings.GameCategoryHolder, false);
+            DisableEnableButtons(ConstStrings.SettingHolder, false);
+            DisableEnableButtons(ConstStrings.HighScoreHolder, false);
+            DisableEnableButtons(ConstStrings.AboutHolder, false);
+        }
     }
 
     public void OnPointerDown(PointerEventData eventData)
